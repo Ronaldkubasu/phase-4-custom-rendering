@@ -1,5 +1,6 @@
 class CheesesController < ApplicationController
 
+  
   # GET /cheeses
   def index
     cheeses = Cheese.all
@@ -9,6 +10,7 @@ class CheesesController < ApplicationController
       render json: { error: 'Cheese not found' }, status: :not_found
     end
   end
+
 
   # GET /cheeses/:id
   def show
